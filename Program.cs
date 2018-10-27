@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace c_
 {
@@ -6,11 +9,12 @@ namespace c_
     {
         static void Main(string[] args)
         {
-					int x,y;
-					x = 10;
-					y = 20;
-					Console.WriteLine(x*y);
-          Console.WriteLine("Hello World!");
+            List<String> strLst = new List<string>() { "apple", "banana", "orange" };
+            XDocument doc = new XDocument(
+                new XElement("root",
+                    strLst.Select(w=> new XElement("str", w))
+                )
+            );
         }
     }
 }
