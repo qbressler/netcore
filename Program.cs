@@ -7,7 +7,7 @@ namespace c_
 {
     class Program
     {
-        // entry point to application and stuff
+        // entry point to application and stuff to be fixed
         static void Main(string[] args)
         {
             List<String> strLst = new List<string>() { "apple", "banana", "orange" };
@@ -17,5 +17,11 @@ namespace c_
                 )
             );
         }
+    }
+
+    public class Activities
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
     }
 }
