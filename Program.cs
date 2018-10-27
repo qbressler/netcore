@@ -7,6 +7,7 @@ namespace c_
 {
     class Program
     {
+        // entry point
         static void Main(string[] args)
         {
             List<String> strLst = new List<string>() { "apple", "banana", "orange" };
