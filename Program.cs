@@ -7,7 +7,7 @@ namespace c_
 {
     class Program
     {
-        // entry point
+        // entry point to application and stuffsdfsdf
         static void Main(string[] args)
         {
             List<String> strLst = new List<string>() { "apple", "banana", "orange" };
